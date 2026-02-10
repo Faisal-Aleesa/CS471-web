@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class BookmoduleConfig(AppConfig):
-    name = 'bookmodule'
+    name = 'apps.bookmodule'
