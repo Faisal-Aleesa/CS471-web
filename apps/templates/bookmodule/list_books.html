@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %} List of Books {% endblock %}
+
+{% block content %}
+    <style>
+        h1 { color: green; }
+        h2 { color: lightskyblue; }
+        p { font-family: verdana; font-size: 20px; }
+    </style>
+    <h1>List of Books</h1>
+    <a href="{% url 'books.view_one_book' bookId=123 %}"><h2>1) Internet & World Wide Web</h2></a>
+    <img src="{% static 'book1.jpg' %}" width="200" height="200">
+    <hr>
+    <h2>2) C++ How to Program</h2>
+    <img src="{% static 'book2.jpg' %}" width="200" height="200">
+{% endblock %}
