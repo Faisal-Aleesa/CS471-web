@@ -1,0 +1,68 @@
+/* main.css */
+.link-block {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 0;
+    color: purple;
+}
+
+#link1 {
+    background-color: lightgreen !important;
+    color: orange !important;
+}
+
+#link2 {
+    background-color: #444 !important;
+    color: orange !important;
+}
+
+#link3 {
+    background-color: black !important;
+    color: white !important;
+}
+
+/* Link states */
+.link-block:visited { color: purple; }
+.link-block:hover { background-color: yellow !important; color: red !important; }
+.link-block:active { background-color: black !important; color: white !important; }
+/* Listing page */
+#listing-title {
+    background-color: teal;
+    color: white;
+    padding: 10px;
+}
+/* Tables page */
+#table1 {
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#table1 th, #table1 td {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+#table1 caption {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#table2 {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: auto;
+}
+
+#table2 th, #table2 td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#camel-title {
+    text-align: center;
+    padding: 15px;
+}
