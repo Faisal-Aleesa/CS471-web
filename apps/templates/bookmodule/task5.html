@@ -1,0 +1,29 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Book Statistics {% endblock %}
+
+{% block content %}
+<h2>Book Statistics</h2>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Number of Books</th>
+        <td>{{ data.total_books }}</td>
+    </tr>
+    <tr>
+        <th>Total Price</th>
+        <td>{{ data.total_price }}</td>
+    </tr>
+    <tr>
+        <th>Average Price</th>
+        <td>{{ data.avg_price }}</td>
+    </tr>
+    <tr>
+        <th>Maximum Price</th>
+        <td>{{ data.max_price }}</td>
+    </tr>
+    <tr>
+        <th>Minimum Price</th>
+        <td>{{ data.min_price }}</td>
+    </tr>
+</table>
+{% endblock %}
