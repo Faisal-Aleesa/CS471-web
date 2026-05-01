@@ -1,0 +1,21 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Lab9 Task2 {% endblock %}
+
+{% block content %}
+<h2>Publishers and Total Book Stock</h2>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Publisher</th>
+        <th>Location</th>
+        <th>Total Stock</th>
+    </tr>
+    {% for pub in publishers %}
+    <tr>
+        <td>{{ pub.name }}</td>
+        <td>{{ pub.location }}</td>
+        <td>{{ pub.total_stock }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
