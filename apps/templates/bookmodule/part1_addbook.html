@@ -1,0 +1,20 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Add Book {% endblock %}
+
+{% block content %}
+<h2>Add New Book</h2>
+<form method="post">
+    {% csrf_token %}
+    <label>Title:</label>
+    <input type="text" name="title" required><br><br>
+    <label>Price:</label>
+    <input type="number" name="price" step="0.01" required><br><br>
+    <label>Quantity:</label>
+    <input type="number" name="quantity" required><br><br>
+    <label>Rating:</label>
+    <input type="number" name="rating" min="1" max="5" required><br><br>
+    <button type="submit">Add Book</button>
+    <a href="{% url 'part1_listbooks' %}">Cancel</a>
+</form>
+{% endblock %}
